@@ -1,4 +1,4 @@
-package com.example.epvj.alohomora2
+package com.example.epvj.alohomora
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

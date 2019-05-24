@@ -1,4 +1,4 @@
-package com.example.epvj.alohomora2
+package com.example.epvj.alohomora
 
 import org.junit.Test
 
