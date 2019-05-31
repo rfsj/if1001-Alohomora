@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "558082217076",
+    "firebase_url": "https://alohomora-e7de7.firebaseio.com",
+    "project_id": "alohomora-e7de7",
+    "storage_bucket": "alohomora-e7de7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558082217076:android:6d25f9ab2a1c4909",
+        "android_client_info": {
+          "package_name": "com.example.alohomora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558082217076-d9bk32de9um2itij9hf2n07ssj4dhjeh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alohomora",
+            "certificate_hash": "ffbbb33c1a7c5d370ccf0a82854ea56ad23be136"
+          }
+        },
+        {
+          "client_id": "558082217076-4pc276q2i0nli99f3l7eptf4e5upon7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEaUYg1P8cXsKMhEcj7czPefnVuB_lvxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558082217076-4pc276q2i0nli99f3l7eptf4e5upon7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
