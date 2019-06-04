@@ -3,9 +3,11 @@ package com.example.alohomora
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.IdpResponse
 import com.google.firebase.auth.FirebaseAuth
@@ -21,6 +23,24 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val item1 = AHBottomNavigationItem("Início", R.drawable.ic_home_black_24dp,android.R.color.white )
+        val item2 = AHBottomNavigationItem("Reservas", R.drawable.ic_event_note_black_24dp,android.R.color.white )
+        val item3 = AHBottomNavigationItem("Liberar", R.drawable.ic_lock_open_black_24dp,android.R.color.white )
+        val item4 = AHBottomNavigationItem("Perfil", R.drawable.ic_face_black_24dp,android.R.color.white )
+
+        //add item
+        bottom_nav.addItem(item1)
+        bottom_nav.addItem(item2)
+        bottom_nav.addItem(item3)
+        bottom_nav.addItem(item4)
+
+
+        bottom_nav.setOnTabSelectedListener { position, wasSelected ->
+            Toast.makeText(this@MainActivity,"Start activity: "+position,Toast.LENGTH_SHORT).show()
+            true
+        }
+
 
         //init
         providers = Arrays.asList<AuthUI.IdpConfig>(
@@ -62,8 +82,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
-
     private fun ShowSignInOptions(){
 
         startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder()
@@ -72,4 +90,5 @@ class MainActivity : AppCompatActivity() {
             .build(),MY_REQUEST_CODE)
 
     }
+
 }
