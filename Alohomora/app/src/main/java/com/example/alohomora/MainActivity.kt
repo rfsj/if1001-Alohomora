@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
         //init
         providers = Arrays.asList<AuthUI.IdpConfig>(
             AuthUI.IdpConfig.EmailBuilder().build(),
