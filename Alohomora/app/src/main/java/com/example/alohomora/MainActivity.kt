@@ -1,6 +1,7 @@
 package com.example.alohomora
 
 import android.app.Activity
+import android.content.AbstractThreadedSyncAdapter
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var providers: List<AuthUI.IdpConfig>
 
-    val MY_REQUEST_CODE: Int = 7117 // Any number you want
+    val MY_REQUEST_CODE: Int = 7117 // um número qualquer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,8 +41,6 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity,"Start activity: "+position,Toast.LENGTH_SHORT).show()
             true
         }
-
-
 
         //init
         providers = Arrays.asList<AuthUI.IdpConfig>(
@@ -91,5 +90,7 @@ class MainActivity : AppCompatActivity() {
             .build(),MY_REQUEST_CODE)
 
     }
+
+
 
 }
