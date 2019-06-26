@@ -32,7 +32,6 @@ class SearchActivity : AppCompatActivity(){
     var dataList: MutableList<Item> = ArrayList()
     var searchView:SearchView?=null
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
@@ -68,9 +67,6 @@ class SearchActivity : AppCompatActivity(){
         dataList.clear()
         dataList.addAll(posts!!)
         adapter.notifyDataSetChanged()
-
-
-
     }
 
     override fun onStop() {

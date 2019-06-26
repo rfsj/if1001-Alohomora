@@ -3,4 +3,7 @@
     <string name="facebook_application_id" translatable="false">2650910791808740</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fb2650910791808740</string>
     <string name="com_facebook_loginview_logged_in_using_facebook_f1gender" translatable="false"/>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

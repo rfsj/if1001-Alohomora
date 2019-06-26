@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_inicio"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Inicio"/>
+
+    <item
+            android:id="@+id/navigation_reservas"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="Reservas"/>
+
+    <item
+            android:id="@+id/navigation_liberar"
+            android:icon="@drawable/ic_lock_open_black_24dp"
+            android:title="Liberar"/>
+
+    <item
+            android:id="@+id/navigation_perfil"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Perfil"/>
+
+</menu>
