@@ -42,7 +42,7 @@ class ReservaActivity : AppCompatActivity() {
             val hour = inputHour.text
             val padlock = inputPadlock.text
 
-            val json = JSONObject("{request\": {\n    \"" +
+            val json = JSONObject("{request: {\n    \"" +
                     "date\": \"$date\",\n    \"" +
                     "user_id\": \"$userid\",\n    \"" +
                     "hour\": \"$hour\",\n    \"" +
