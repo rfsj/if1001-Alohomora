@@ -1,46 +1,49 @@
-
 package com.example.alohomora
 
 import android.os.AsyncTask
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ProgressBar
+import kotlinx.android.synthetic.main.activity_liberacao.*
+import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.*
 import java.net.HttpURLConnection
 import java.net.URL
 
-operator fun JSONArray.iterator(): Iterator<JSONObject> =
-    (0 until length()).asSequence().map { get(it) as JSONObject }.iterator()
 
-const val TIMEOUT = 10*1000
 
-class PostActivity {
+class LiberacaoActivity : AppCompatActivity() {
+
+    operator fun JSONArray.iterator(): Iterator<JSONObject> =
+        (0 until length()).asSequence().map { get(it) as JSONObject }.iterator()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        val date = "hh"
-        val user_id = "hh"
-        val hour = "hh"
-        val padlock = "hh"
-
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_liberacao)
 
-        val progressBar = findViewById<ProgressBar>(R.id.progressBar)
+        setSupportActionBar(toolbar2)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.title = "Liberar"
+
+        val progressBar = findViewById<ProgressBar>(R.id.progressBar2)
         progressBar.visibility = View.INVISIBLE
 
-        val buttonPost = findViewById<Button>(R.id.button)
+        val buttonPost = findViewById<Button>(R.id.botaoUnlock)
         buttonPost.setOnClickListener {
 
-            val json = JSONObject("{\n\"_id\": \"$id\",\n  \"" +
-                    "_rev\": \"$rev\",\n  \"" +
-                    "reserve\": {\n    \"" +
+            val date = inputDate2.text
+            val userid = inputUser2.text
+            val hour = inputHour2.text
+            val padlock = inputPadlock2.text
+
+            val json = JSONObject("{release\": {\n    \"" +
                     "date\": \"$date\",\n    \"" +
-                    "user_id\": \"$user_id\",\n    \"" +
+                    "user_id\": \"$userid\",\n    \"" +
                     "hour\": \"$hour\",\n    \"" +
                     "padlock\": \"$padlock\"\n  }\n}")
 
@@ -62,8 +65,8 @@ class PostActivity {
         override fun doInBackground(vararg params: String): String? {
             val url = URL(params[1])
             val httpClient = url.openConnection() as HttpURLConnection
-            httpClient.readTimeout = TIMEOUT
-            httpClient.connectTimeout = TIMEOUT
+            httpClient.readTimeout = 10*1000
+            httpClient.connectTimeout = 10*1000
             httpClient.requestMethod = params[0]
 
             if (params[0] == "POST") {

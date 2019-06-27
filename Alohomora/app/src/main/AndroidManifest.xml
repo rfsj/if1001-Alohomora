@@ -29,5 +29,19 @@
                     android:value=".MainActivity" />
         </activity>
 
+        <activity android:name=".ReservaActivity"
+                  android:parentActivityName=".MainActivity">
+        <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".LiberacaoActivity"
+                  android:parentActivityName=".MainActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MainActivity" />
+        </activity>
+
     </application>
 </manifest>

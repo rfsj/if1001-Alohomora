@@ -10,9 +10,6 @@ import com.firebase.ui.auth.IdpResponse
 import com.google.firebase.auth.FirebaseAuth
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import android.view.MenuItem
-import android.view.View
-import kotlinx.android.synthetic.main.activity_main.*
-
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -36,30 +33,16 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.navigation_inicio -> {
-
                 val intent = Intent(this, SearchActivity::class.java).apply {}
                 startActivity(intent)
-                /*
-                // Get the text fragment instance
-                val searchFragment = SearchFragment()
-
-                // Get the support fragment manager instance
-                val manager = supportFragmentManager
-
-                // Begin the fragment transition using support fragment manager
-                val transaction = manager.beginTransaction()
-
-                // Replace the fragment on container
-                transaction.replace(R.id.container,searchFragment)
-                transaction.addToBackStack(null)
-
-                // Finishing the transition
-                transaction.commit()
-                */
             }
             R.id.navigation_reservas -> {
+                val intent = Intent(this, ReservaActivity::class.java).apply {}
+                startActivity(intent)
             }
             R.id.navigation_liberar -> {
+                val intent = Intent(this, LiberacaoActivity::class.java).apply {}
+                startActivity(intent)
             }
             R.id.navigation_perfil -> {
                 // Ta aqui só pra testar essa bosta por enquanto
