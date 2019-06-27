@@ -41,7 +41,7 @@ class LiberacaoActivity : AppCompatActivity() {
             val hour = inputHour2.text
             val padlock = inputPadlock2.text
 
-            val json = JSONObject("{release\": {\n    \"" +
+            val json = JSONObject("{request\": {\n    \"" +
                     "date\": \"$date\",\n    \"" +
                     "user_id\": \"$userid\",\n    \"" +
                     "hour\": \"$hour\",\n    \"" +
@@ -56,7 +56,7 @@ class LiberacaoActivity : AppCompatActivity() {
                     return@HttpTask
                 }
                 println(it)
-            }.execute("POST", "https://alohomorabeta1.mybluemix.net/app/request/reserve", json.toString())
+            }.execute("POST", "https://alohomorabeta1.mybluemix.net/app/request/relese", json.toString())
         }
     }
 
