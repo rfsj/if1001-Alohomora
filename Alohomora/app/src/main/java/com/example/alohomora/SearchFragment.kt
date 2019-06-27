@@ -1,3 +1,4 @@
+/*
 package com.example.alohomora
 
 import android.content.Context
@@ -27,6 +28,7 @@ class SearchFragment : Fragment() {
     private val queryTextListener: SearchView.OnQueryTextListener? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
         val rv = RecyclerView(context!!)
         rv.layoutManager = LinearLayoutManager(context)
         adapter = MyAdapter(context!!, dataList)
@@ -104,3 +106,4 @@ class SearchFragment : Fragment() {
         }
     }
 }
+*/

@@ -1,3 +1,4 @@
+
 package com.example.alohomora
 
 import android.os.AsyncTask
@@ -21,8 +22,6 @@ class PostActivity {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        val id = "ecf3401e2758c87ff713242dc1ea53db"
-        val rev = "1-16f3ffbafd857d530c4da43d03cebbd9"
         val date = "hh"
         val user_id = "hh"
         val hour = "hh"

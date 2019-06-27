@@ -1,26 +1,22 @@
+
 package com.example.alohomora
 
 import android.os.Bundle
-import android.app.Activity
 import android.app.SearchManager
-import android.content.ClipData
 import android.content.Context
-import android.content.Intent
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.alohomora.Adapter.MyAdapter
 import com.example.alohomora.Model.Item
 import com.example.alohomora.Retrofit.DataAPI
 import com.example.alohomora.Retrofit.RetrofitClient
-import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.activity_search.*
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
 

@@ -10,6 +10,7 @@ import com.firebase.ui.auth.IdpResponse
 import com.google.firebase.auth.FirebaseAuth
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import android.view.MenuItem
+import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -36,9 +37,9 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         when (item.itemId) {
             R.id.navigation_inicio -> {
 
-                setSupportActionBar(toolbar)
-                supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-                supportActionBar!!.title = "Filters"
+                val intent = Intent(this, SearchActivity::class.java).apply {}
+                startActivity(intent)
+                /*
                 // Get the text fragment instance
                 val searchFragment = SearchFragment()
 
@@ -54,6 +55,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
                 // Finishing the transition
                 transaction.commit()
+                */
             }
             R.id.navigation_reservas -> {
             }
