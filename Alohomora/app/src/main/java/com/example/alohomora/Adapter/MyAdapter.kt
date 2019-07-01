@@ -22,6 +22,7 @@ class MyAdapter (internal var context:Context,
     }
 
 
+
     override fun getFilter(): Filter {
         return object:Filter(){
             override fun performFiltering(charString: CharSequence?): FilterResults
@@ -69,8 +70,9 @@ class MyAdapter (internal var context:Context,
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.txt_title.text = filterListResult.get(position).title
         holder.txt_type.text = filterListResult.get(position).body
-    }
 
+
+    }
 
     class MyViewHolder(itemView:View):RecyclerView.ViewHolder(itemView) {
         internal var txt_title:TextView
@@ -80,9 +82,9 @@ class MyAdapter (internal var context:Context,
         init {
             txt_title = itemView.findViewById<TextView>(R.id.title)
             txt_type = itemView.findViewById<TextView>(R.id.body)
-
         }
 
 
     }
+
 }
