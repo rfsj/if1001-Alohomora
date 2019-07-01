@@ -1,9 +1,9 @@
 
 package com.example.alohomora
 
-import android.os.Bundle
 import android.app.SearchManager
 import android.content.Context
+import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -35,7 +35,7 @@ class SearchActivity : AppCompatActivity(){
         //Toolbar
         setSupportActionBar(toolbar)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        supportActionBar!!.title = "Filters"
+        supportActionBar!!.title = "Filtros"
 
         //Init API
         val retrofit = RetrofitClient.getInstance
