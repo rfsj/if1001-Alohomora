@@ -6,11 +6,6 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <!--<com.loopj.android.image.SmartImageView-->
-                <!--android:id="@+id/avatar"-->
-                <!--android:layout_width="80dp"-->
-                <!--android:layout_height="80dp"/>-->
-
         <ImageView
                 android:id="@+id/avatar"
                 android:src="@mipmap/ic_launcher"
@@ -29,8 +24,9 @@
                 android:text="Tipo"
                 android:layout_toRightOf="@id/avatar"
                 android:layout_below="@+id/title"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="11dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"/>
 
 </RelativeLayout>

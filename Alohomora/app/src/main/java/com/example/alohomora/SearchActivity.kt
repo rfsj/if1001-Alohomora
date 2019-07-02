@@ -3,6 +3,7 @@ package com.example.alohomora
 
 import android.app.SearchManager
 import android.content.Context
+import android.graphics.Color
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -36,6 +37,7 @@ class SearchActivity : AppCompatActivity(){
         setSupportActionBar(toolbar)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.title = "Filtros"
+        toolbar.setTitleTextColor(Color.WHITE)
 
         //Init API
         val retrofit = RetrofitClient.getInstance

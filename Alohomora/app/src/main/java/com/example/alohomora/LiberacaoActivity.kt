@@ -1,13 +1,13 @@
 package com.example.alohomora
 
+import android.graphics.Color
 import android.os.AsyncTask
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ProgressBar
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_liberacao.*
-import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.*
@@ -29,6 +29,7 @@ class LiberacaoActivity : AppCompatActivity() {
         setSupportActionBar(toolbar2)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.title = "Liberar"
+        toolbar2.setTitleTextColor(Color.WHITE)
 
         val progressBar = findViewById<ProgressBar>(R.id.progressBar2)
         progressBar.visibility = View.INVISIBLE

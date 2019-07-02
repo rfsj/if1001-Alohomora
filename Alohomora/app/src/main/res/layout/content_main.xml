@@ -6,6 +6,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorPurple"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:showIn="@layout/activity_search"
         tools:context="SearchActivity">

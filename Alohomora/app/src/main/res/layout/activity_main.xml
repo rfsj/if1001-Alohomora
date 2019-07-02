@@ -7,9 +7,12 @@
 
     <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:background="@android:color/white"
+            android:backgroundTint="@color/colorPurple"
+            android:textColor="@color/colorWhite"
+            app:itemIconTint="#FFFFFF"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ToolbarColoredBackArrow"
             app:popupTheme="@style/AppTheme.PopOverlay"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -25,7 +28,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:itemBackground="@color/com_facebook_blue"
+            app:itemBackground="@color/colorPurple"
             app:itemIconTint="#FFFFFF"
             app:itemTextColor="#FFFFFF"
             app:menu="@menu/navigation"/>

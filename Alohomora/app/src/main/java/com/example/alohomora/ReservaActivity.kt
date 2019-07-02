@@ -1,12 +1,12 @@
 package com.example.alohomora
 
+import android.graphics.Color
 import android.os.AsyncTask
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ProgressBar
-import kotlinx.android.synthetic.main.activity_main.*
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.toolbar
 import kotlinx.android.synthetic.main.activity_reserva.*
 import org.json.JSONArray
@@ -30,6 +30,7 @@ class ReservaActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.title = "Reservar"
+        toolbar.setTitleTextColor(Color.WHITE)
 
         val progressBar = findViewById<ProgressBar>(R.id.progressBar)
         progressBar.visibility = View.INVISIBLE

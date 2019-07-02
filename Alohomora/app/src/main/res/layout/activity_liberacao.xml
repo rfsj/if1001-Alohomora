@@ -5,13 +5,15 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
     <com.google.android.material.appbar.AppBarLayout
-            android:theme="@style/AppTheme.AppBarOverlay"
+            android:theme="@style/ToolbarColoredBackArrow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar2"
-                android:background="@android:color/white"
+                android:background="@color/colorPurple"
+                android:textColor="@color/colorWhite"
+                app:itemIconTint="#FFFFFF"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:popupTheme="@style/AppTheme.PopOverlay">
@@ -22,35 +24,50 @@
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:gravity="center" android:padding="20dp">
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="20dp">
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:id="@+id/inputDate2" android:hint="Data" android:imeOptions="actionNext"/>
+                android:id="@+id/inputDate2"
+                android:hint="Data"
+                android:imeOptions="actionNext"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:id="@+id/inputUser2" android:hint="Usuario" android:imeOptions="actionNext"/>
+                android:id="@+id/inputUser2"
+                android:hint="Usuario"
+                android:imeOptions="actionNext"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:id="@+id/inputHour2" android:hint="Hora" android:imeOptions="actionNext"/>
+                android:id="@+id/inputHour2"
+                android:hint="Hora"
+                android:imeOptions="actionNext"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:id="@+id/inputPadlock2" android:hint="Padlock" android:imeOptions="actionSend"/>
+                android:id="@+id/inputPadlock2"
+                android:hint="Padlock"
+                android:imeOptions="actionSend"/>
         <Button
                 android:text="Liberar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/botaoUnlock" android:backgroundTint="#00838F"
+                android:layout_height="wrap_content"
+                android:id="@+id/botaoUnlock"
+                android:backgroundTint="@color/colorPurple"
+                android:textColor="@color/colorWhite"
                 android:layout_marginTop="20dp"/>
     </LinearLayout>
     <ProgressBar
             style="?android:attr/progressBarStyle"
+            android:background="@color/colorPurple"
+            android:textColor="@color/colorWhite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/progressBar2"/>
