@@ -18,5 +18,6 @@ class Item {
     var title:String?=null
     var body:String?=null
     var photo:String?=null
+    var padlock:String?=null
 
 }

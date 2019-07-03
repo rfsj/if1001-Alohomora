@@ -70,6 +70,7 @@ class MyAdapter (internal var context:Context,
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.txt_title.text = filterListResult.get(position).title
         holder.txt_type.text = filterListResult.get(position).body
+        holder.txt_padlock.text = filterListResult.get(position).padlock
 
 
     }
@@ -77,11 +78,13 @@ class MyAdapter (internal var context:Context,
     class MyViewHolder(itemView:View):RecyclerView.ViewHolder(itemView) {
         internal var txt_title:TextView
         internal var txt_type:TextView
+        internal var txt_padlock:TextView
 
 
         init {
             txt_title = itemView.findViewById<TextView>(R.id.title)
             txt_type = itemView.findViewById<TextView>(R.id.body)
+            txt_padlock = itemView.findViewById<TextView>(R.id.padlock)
         }
 
 
