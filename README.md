@@ -54,11 +54,12 @@ Inicialmente, a aplicação tem uma tela de login onde pode ser feito o cadastro
 	> Controla a Recycle View e a barra de filtro por título
 
 ## Features Futuras
-Tratamento das informações do formulário
+- Tratamento das informações do formulário
 > A complexidade em tratar as informações no servidor para autenticação impossibilitou a implantação
-Resposta do servidor ao usuário
+- Resposta do servidor ao usuário
 > Não conseguimos fazer com o que o servidor enviasse uma mensagem de successful e unsuccessful para aplicação
-Mapa para geolocalização
-	> Após diversos erros com a criação do mapa (com pins interativos que redirecionava o usuário para reserva), optamos por não colocar, ficando para features futuras.
-Caminho mais intuitivo para o usuário para reserva
+- Mapa para geolocalização
+> Após diversos erros com a criação do mapa (com pins interativos que redirecionava o usuário para reserva), optamos por não colocar, ficando para features futuras
+- Caminho mais intuitivo para o usuário para reserva
 > Depois do erro anterior, foi optado mudar a rota de reserva, mas com intuito de ser implementada no futuro.
+
